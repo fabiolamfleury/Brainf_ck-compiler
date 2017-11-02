@@ -7,7 +7,7 @@ bf_to_c_dict = {
     '>': '\t++ptr;\n',
     '<': '\t--ptr;\n',
     '.': '\tprintf("%c",(*ptr));\n',
-    ',': '\t*ptr = getchar();\n',
+    ',': '\t*ptr = getchar();\ngetchar();\n',
     '[': '\twhile(*ptr) {\n',
     ']': '\t}\n'
 }
